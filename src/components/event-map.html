@@ -1,0 +1,76 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html" />
+<link rel="import" href="../../bower_components/google-map/google-map-search.html"/>
+<link rel="import" href="../../bower_components/google-map/google-map.html" />
+<link rel="import" href="../../bower_components/google-map/google-map-marker.html"/>
+
+<dom-module id="event-map">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+      google-map {
+        height: 150px;
+      }
+      .show {
+        display: block;
+      }
+      .hide {
+        display: none;
+      }
+    </style>
+
+    <container 
+      flipped="[[flipped]]"
+      class$="[[getClass(flipped)]]">
+      <google-map-search
+  
+        map="[[map]]"
+        global-search="true"
+        query="[[place]]"
+        results="{{ results }}"
+      >
+      </google-map-search>
+      <google-map
+        
+        map="{{ map }}"
+        zoom="18"
+        fit-to-markers
+        latitude="[[ results.0.latitude ]]"
+        longitude="[[ results.0.longitude ]]"
+        disable-default-ui
+        api-key="AIzaSyCRwd4w5MejrjWSZQ52t0R9xyujp-vtT8o"
+      >
+        <template is="dom-repeat" items="{{ results }}" as="marker">
+          <google-map-marker
+            latitude="{{ marker.latitude }}"
+            longitude="{{ marker.longitude }}"
+          >
+            <h2>{{ marker.name }}</h2>
+            <span>{{ marker.formatted_address }}</span>
+          </google-map-marker>
+        </template>
+      </google-map>
+    </container>
+  </template>
+  <script>
+    class EventMap extends Polymer.Element {
+      static get is() {
+        return "event-map";
+      }
+
+      static get properties() {
+        return {
+          results: Array,
+          map: Object,
+          place: String
+        };
+      }
+      getClass(flipped) {
+        return this.flipped ? "show" : "hide";
+      }
+    }
+
+    window.customElements.define(EventMap.is, EventMap);
+  </script>
+</dom-module>

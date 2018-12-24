@@ -1,0 +1,95 @@
+{
+  "app-events": [
+    {
+      "id": 1,
+      "name": "La cabeza del Dragón",
+      "place": "Salón de actos del Edificio A, Escuela Técnica Superior de Ingenieros de Telecomunicación",
+      "address": "Avenida Complutense 30, 28045 Madrid",
+      "timeStamp": 1545505200,
+      "minutes": 90,
+      "category": "arts",
+      "numParticipants": 100,
+      "numCancellations": 8, 
+      "organizer": "No es Culpa Nuestra",
+      "description": "The young prince Verdemar is forced to leave the kingdom when he frees the Goblin that, his father, the King, had prisoner in his castle. Thus begins his adventure, in which thanks to his generosity and kindness he meets new friends who will help him when his destiny is intertwined with that of Infantina Blanca Flor.\nAn adaptation of the Children's Farce of the Dragon's Head, by Ramón María del Valle-Inclán."
+    },
+    {
+      "id": 2,
+      "name": "Tombolo! Marc Rebillet en Madrid",
+      "place": "Sala CLAMORES",
+      "address": "Calle de Alburquerque 14, 28010 Madrid",
+      "timeStamp": 1547931600,
+      "minutes": 180,
+      "category": "music",
+      "numParticipants": 50,
+      "numCancellations": 1, 
+      "organizer": "Tombolo",
+      "description": "On January 19 a childhood friend of mine comes home to have a good laugh. Marc Rebillet has become a sensation in recent months for his genius, versatility and the way of doing what he does, musically speaking."
+    },
+    {
+      "id": 3,
+      "name": "Encuentro con Cristóbal Viedma CEO de Lingokids",
+      "place": "First Tuesday",
+      "address": "El Callejón de Serrano, 63, Madrid",
+      "timeStamp": 1546974000,
+      "minutes": 120,
+      "category": "business",
+      "numParticipants": 40,
+      "numCancellations": 2, 
+      "organizer": "First Tuesday",
+      "description": "First Tuesday is a support organization for entrepreneurs that organizes training and networking events with the aim of creating the main community of entrepreneurs, professionals and business angels in Spain."
+    },
+    {
+      "id": 4,
+      "name": "Tapas Tour",
+      "place": "Cats Hostels",
+      "address": "Calle de la Cabeza, 24, 28012 Madrid",
+      "timeStamp": 1545846300,
+      "minutes": 120,
+      "category": "food & drink",
+      "numParticipants": 20,
+      "numCancellations": 0, 
+      "organizer": "Cats Hostels",
+      "description": "Everyone wants to think that the most important sport in Spain is Football (soccer), but don’t be fooled. The most important sport in Spain is “tapeo”.\nDon’t leave Madrid without playing our national sport, you will eat well, you’ll have fun with other travellers and it will all be a new experience.\nIncludes typical Spanish food an different drinks."
+    },
+    {
+      "id": 5,
+      "name": "Yoga Barrio de Las Letras",
+      "place": "El atelier",
+      "address": "Calle Lope de vega 13, 28014 Madrid",
+      "timeStamp": 1515319200,
+      "minutes": 75,
+      "category": "sports & wellness",
+      "numParticipants": 20,
+      "numCancellations": 1, 
+      "organizer": "Yoga Atelier",
+      "description": "Yoga Flow sessions for all levels immersed in a disruptive space.\nJoin these sessions of ancestral wisdom and exchange to learn techniques that will increase your well-being and put your Creative Flow to the limit ...\nWe have mats from @sternitzworld, therefore there is no need to bring a mat."
+    },
+    {
+      "id": 6,
+      "name": "#tech4girls",
+      "place": "La Nave",
+      "address": "Calle Cifuentes 5, 28021 Madrid",
+      "timeStamp": 1550912400,
+      "minutes": 660,
+      "category": "classes",
+      "numParticipants": 200,
+      "numCancellations": 7, 
+      "organizer": "Fundación Click That Matters",
+      "description": "With the aim of boosting the number of women developing professional careers in science and technology, the Click That Matters, Woman Forward and Helping by Doing foundations present an experimental event where girls, who are in the secondary school cycle, can get closer to the world of technology and science.\nMission\nBring science and technology closer through experiential activities, to girls who are in the secondary school cycle and who must choose their future profession in these years."
+    },
+    {
+      "id": 7,
+      "name": "Beer Pong Championships",
+      "place": "Espit Chupitos Madrid Sol",
+      "address": "Calle de Espoz y Mina 22,28012 Madrid",
+      "timeStamp": 1545429600,
+      "minutes": 180,
+      "category": "parties",
+      "numParticipants": 50,
+      "numCancellations": 0, 
+      "organizer": "Beer Pong Madrid",
+      "description": "BEER PONG is a drinking game in which 2 teams of 2 players throw a ping pong ball across a table with the intent of landing the ball in a cup of beer on the other end. If the ball lands in a cup, the beer of that cup is consumed by the other team and the cup is removed from the table. The first team to eliminate all of the opponent's cups is the winner."
+    }
+  ]
+}

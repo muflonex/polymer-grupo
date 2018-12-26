@@ -29,7 +29,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
     </style>
-
     <iron-ajax
       url="http://localhost:3000/app-events"
       auto="auto"
@@ -45,7 +44,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           is="dom-repeat"
           items="[[events]]"
         >
-          <event-card event="[[item]]"></event-card>
+          <event-card event="[[item]]" page="[[route]]"></event-card>
         </template>
       </section>
     </container>
@@ -56,6 +55,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       static get is() { return 'app-events'; }
       static get properties(){
         return {
+          page: String,
           events: Array,
           loading: Boolean
         }

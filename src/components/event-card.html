@@ -1,9 +1,10 @@
 <link rel="import" href="../../bower_components/polymer/polymer-element.html">
 <link rel="import" href="../../bower_components/flippy-card/flippy-card.html">
-<link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
 <link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
-<link rel="import" href="../components/event-map.html">
 
+<link rel="import" href="my-icons.html">
+
+<link rel="import" href="../components/event-map.html">
 <link rel="import" href="../styles/shared-styles.html">
 <link rel="import" href="../styles/card-styles.html">
 
@@ -21,7 +22,7 @@
         cursor: zoom-in;
       }
     </style>
-
+    
     <flippy-card
       axis="X"
       current-side="front"
@@ -60,6 +61,7 @@
       static get is() { return 'event-card'; }
       static get properties(){
         return {
+          page: String,
           flipped: {
             type: Boolean,
             value: false
@@ -113,13 +115,13 @@
       
       getIconType(eventType){
         switch(eventType){
-          case("arts"): return "image:palette"
-          case("business"): return "places:business-center"
-          case("classes"): return "social:school"
-          case("food & drink"): return "maps:restaurant"
-          case("music"): return "image:music-note"
-          case("parties"): return "maps:local-bar"
-          case("sports & wellness"): return "places:fitness-center"
+          case("arts"): return "my-icons:palette"
+          case("business"): return "my-icons:business-center"
+          case("classes"): return "my-icons:school"
+          case("food & drink"): return "my-icons:restaurant"
+          case("music"): return "my-icons:music-note"
+          case("parties"): return "my-icons:local-bar"
+          case("sports & wellness"): return "my-icons:fitness-center"
         }
       }
 
@@ -128,7 +130,12 @@
         this.$.thecard.flip();
       }
       zoomCard(){
-        this.set('route.path', '/app-view1');
+        console.log(this.page)
+        window.dispatchEvent(new CustomEvent('_routePageChanged', {
+          bubbles: true,
+          composed: true,
+          detail: "/app-view1/"
+        }));
       }
     }
 
